@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REZZ AXTH - HACKED</title>
+    <style>
+        :root {
+            --glitch-color: #ff0000;
+            --glitch-color2: #00f7ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', monospace;
+        }
+
+        body {
+            background-color: #000;
+            color: var(--glitch-color);
+            overflow-x: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/06528720-4671-4148-8f4f-bca3a7b78c25.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px solid var(--glitch-color);
+            border-radius: 5px;
+            max-width: 800px;
+            width: 90%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glitch {
+            position: relative;
+        }
+
+        .glitch::before, .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+        }
+
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 var(--glitch-color2);
+            animation: glitch-effect 3s infinite linear alternate-reverse;
+        }
+
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 var(--glitch-color2), 2px 2px var(--glitch-color);
+            animation: glitch-effect 2s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-effect {
+            0% {
+                clip: rect(44px, 9999px, 44px, 0);
+            }
+            5% {
+                clip: rect(29px, 9999px, 79px, 0);
+            }
+            10% {
+                clip: rect(72px, 9999px, 59px, 0);
+            }
+            15% {
+                clip: rect(59px, 9999px, 25px, 0);
+            }
+            20% {
+                clip: rect(22px, 9999px, 99px, 0);
+            }
+            25% {
+                clip: rect(76px, 9999px, 88px, 0);
+            }
+            30% {
+                clip: rect(33px, 9999px, 54px, 0);
+            }
+            35% {
+                clip: rect(4px, 9999px, 24px, 0);
+            }
+            40% {
+                clip: rect(66px, 9999px, 89px, 0);
+            }
+            45% {
+                clip: rect(84px, 9999px, 24px, 0);
+            }
+            50% {
+                clip: rect(11px, 9999px, 32px, 0);
+            }
+            55% {
+                clip: rect(18px, 9999px, 4px, 0);
+            }
+            60% {
+                clip: rect(8px, 9999px, 19px, 0);
+            }
+            65% {
+                clip: rect(44px, 9999px, 8px, 0);
+            }
+            70% {
+                clip: rect(82px, 9999px, 5px, 0);
+            }
+            75% {
+                clip: rect(20px, 9999px, 100px, 0);
+            }
+            80% {
+                clip: rect(31px, 9999px, 12px, 0);
+            }
+            85% {
+                clip: rect(90px, 9999px, 3px, 0);
+            }
+            90% {
+                clip: rect(90px, 9999px, 17px, 0);
+            }
+            95% {
+                clip: rect(5px, 9999px, 37px, 0);
+            }
+            100% {
+                clip: rect(8px, 9999px, 2px, 0);
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: flicker 0.5s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+                text-shadow: 
+                    0 0 4px #fff,
+                    0 0 11px #fff,
+                    0 0 19px #fff,
+                    0 0 40px var(--glitch-color),
+                    0 0 80px var(--glitch-color),
+                    0 0 90px var(--glitch-color),
+                    0 0 100px var(--glitch-color),
+                    0 0 150px var(--glitch-color);
+            }
+            20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+                text-shadow: none;
+            }
+        }
+
+        p {
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .password-form {
+            margin: 2rem 0;
+        }
+
+        input[type="password"] {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--glitch-color);
+            padding: 0.8rem 1rem;
+            width: 70%;
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            outline: none;
+        }
+
+        input[type="password"]:focus {
+            box-shadow: 0 0 10px var(--glitch-color);
+        }
+
+        button {
+            background-color: var(--glitch-color);
+            color: black;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #cc0000;
+            transform: scale(1.05);
+        }
+
+        .hacked-message {
+            margin-bottom: 2rem;
+        }
+
+        .hidden-content {
+            display: none;
+            color: white;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 5px;
+        }
+
+        .hidden-content h2 {
+            color: var(--glitch-color2);
+            margin-bottom: 1rem;
+        }
+
+        /* Terminal effect */
+        .terminal {
+            font-family: monospace;
+            white-space: pre;
+            overflow: hidden;
+            border: 1px solid #333;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            margin: 1rem 0;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .typing-effect {
+            border-right: 2px solid #fff;
+            animation: blink 0.75s step-end infinite;
+        }
+
+        @keyframes blink {
+            from, to { border-color: transparent }
+            50% { border-color: #fff }
+        }
+
+        .error-message {
+            color: var(--glitch-color);
+            margin-top: 1rem;
+            animation: shake 0.5s;
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0) }
+            25% { transform: translateX(-5px) }
+            50% { transform: translateX(5px) }
+            75% { transform: translateX(-5px) }
+            100% { transform: translateX(0) }
+        }
+
+        .matrix-rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="matrixRain" class="matrix-rain"></canvas>
+    
+    <div class="container">
+        <h1 class="glitch" data-text="REZZ AXTH">REZZ AXTH</h1>
+        
+        <div class="hacked-message">
+            <p>YOUR SYSTEM HAS BEEN COMPROMISED BY REZZ AXTH</p>
+            <p>█▓▒░☠ SYSTEM COMPROMISED ☠░▒▓█
+
+DEVICE INFECTED BY: REZZ AXTH
+
+>> ALL FILES ENCRYPTED 🔐  
+>> PERSONAL DATA LOCKED 🔒  
+>> SYSTEM ACCESS BLOCKED ❌  
+>> CAMERA & MICROPHONE ACCESSED 📷🎙  
+>> IP ADDRESS: LOGGED 📡
+
+=============================
+TO RECOVER YOUR DATA:
+ENTER DECRYPTION KEY BELOW
+=============================
+
+PASSWORD: ██████████
+
+⚠ WARNING ⚠  
+- DO NOT RESTART DEVICE  
+- DO NOT TRY TO REMOVE THIS MESSAGE  
+- FAILURE TO COMPLY WILL RESULT IN TOTAL DATA LOSS
+
+CONTACT: rezzacx@gmail.com
+TIME LEFT: 24 HOURS 
+
+ </p>
+            <p>TO REGAIN ACCESS, ENTER THE PASSWORD BELOW:</p>
+        </div>
+        
+        <div class="password-form">
+            <input type="password" id="passwordInput" placeholder="Enter decryption password" autocomplete="off">
+            <button onclick="checkPassword()">UNLOCK</button>
+            <div id="errorMessage" class="error-message"></div>
+        </div>
+        
+        <div class="terminal">
+            <div id="terminalText"></div>
+        </div>
+        
+        <div id="hiddenContent" class="hidden-content">
+            <h2>ACCESS GRANTED</h2>
+            <p>Welcome back, admin. Your system has been restored.</p>
+            <p>The site was protected against the attack. No data was compromised.</p>
+            <p>System security restored. Proceed with caution.</p>
+        </div>
+    </div>
+    
+    <footer></footer>
+
+    <script>
+        // Matrix rain effect
+        const canvas = document.getElementById('matrixRain');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        const characters = "01!@#$%^&*()_+-=[]{}|;':,./<>?";
+        const fontSize = 14;
+        const columns = canvas.width / fontSize;
+        
+        const drops = [];
+        for (let i = 0; i < columns; i++) {
+            drops[i] = Math.random() * -100;
+        }
+        
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.fillStyle = '#0f0'; // Matrix green
+            ctx.font = fontSize + 'px monospace';
+            
+            for (let i = 0; i < drops.length; i++) {
+                const text = characters.charAt(Math.floor(Math.random() * characters.length));
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                
+                drops[i]++;
+            }
+        }
+        
+        setInterval(drawMatrix, 33);
+        
+        // Terminal typing effect
+        const terminalText = document.getElementById('terminalText');
+        const messages = [
+            "Bypassing firewall...",
+            "Injecting malware payload...",
+            "Establishing persistent access...",
+            "Escalating privileges...",
+            "Exfiltrating sensitive data...",
+            "Covering tracks...",
+        ];
+        
+        let currentMessage = 0;
+        let currentChar = 0;
+        let isDeleting = false;
+        
+        function typeTerminal() {
+            const currentText = messages[currentMessage];
+            
+            if (!isDeleting && currentChar <= currentText.length) {
+                terminalText.innerHTML = currentText.substring(0, currentChar) + '<span class="typing-effect"></span>';
+                currentChar++;
+                setTimeout(typeTerminal, Math.random() * 100 + 50);
+            } else if (isDeleting && currentChar >= 0) {
+                terminalText.innerHTML = currentText.substring(0, currentChar) + '<span class="typing-effect"></span>';
+                currentChar--;
+                setTimeout(typeTerminal, 30);
+            } else {
+                isDeleting = !isDeleting;
+                if (!isDeleting) {
+                    currentMessage = (currentMessage + 1) % messages.length;
+                }
+                setTimeout(typeTerminal, 1000);
+            }
+        }
+        
+        setTimeout(typeTerminal, 1000);
+        
+        // Password check
+        const correctPassword = "REZZ";
+        
+        function checkPassword() {
+            const input = document.getElementById('passwordInput');
+            const error = document.getElementById('errorMessage');
+            const hiddenContent = document.getElementById('hiddenContent');
+            
+            if (input.value.toUpperCase() === correctPassword) {
+                // Correct password
+                error.textContent = '';
+                hiddenContent.style.display = 'block';
+                
+                // Animate the container
+                document.querySelector('.container').style.borderColor = '#0f0';
+                document.querySelector('.container').style.boxShadow = '0 0 20px #0f0';
+                
+                // Change glitch color to green
+                document.documentElement.style.setProperty('--glitch-color', '#0f0');
+                document.documentElement.style.setProperty('--glitch-color2', '#0f0');
+                
+                // Change background
+                document.body.style.backgroundImage = 'url(https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/15da9a00-ff0d-4e67-b34a-8825044b8968.png)';
+            } else {
+                // Wrong password
+                error.textContent = 'INCORRECT PASSWORD - TRY AGAIN';
+                input.value = '';
+                input.focus();
+            }
+        }
+        
+        // Allow pressing Enter to submit password
+        document.getElementById('passwordInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkPassword();
+            }
+        });
+        
+        // Resize matrix rain on window resize
+        window.addEventListener('resize', function() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
+
